@@ -1,0 +1,48 @@
+﻿* Encoding: UTF-8.
+
+
+FREQUENCIES VARIABLES=Q3
+  /ORDER=ANALYSIS.
+
+DESCRIPTIVES VARIABLES=Q4
+  /STATISTICS=MEAN STDDEV MIN MAX.
+
+T-TEST GROUPS=similarity(1 2)
+  /MISSING=ANALYSIS
+  /VARIABLES=Q40.0
+  /CRITERIA=CI(.95).
+
+UNIANOVA Q29 BY condition similarity
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /EMMEANS=TABLES(OVERALL) 
+  /PRINT=ETASQ DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+/EMMEANS=TABLES(condition*similarity) COMPARE(similarity)
+/EMMEANS=TABLES(condition*similarity) COMPARE(condition)
+  /DESIGN=condition similarity condition*similarity.
+
+UNIANOVA Q27 BY condition similarity
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /EMMEANS=TABLES(OVERALL) 
+  /PRINT=ETASQ DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=condition similarity condition*similarity.
+
+UNIANOVA Q33 BY condition similarity
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /EMMEANS=TABLES(OVERALL) 
+  /PRINT=ETASQ DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=condition similarity condition*similarity.
+
+UNIANOVA Q37.0 BY condition similarity
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /EMMEANS=TABLES(OVERALL) 
+  /PRINT=ETASQ DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=condition similarity condition*similarity.
+

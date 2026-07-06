@@ -1,0 +1,21 @@
+STUDY 1b (N = 242) - KEY STATISTICS
+=====================================
+
+N = 242 (complete cases)
+  Simulation-Cold: n = 54
+  Simulation-Warm: n = 63
+  Priming-Cold:    n = 66
+  Priming-Warm:    n = 59
+
+Reliability: alpha_sim = 0.639, alpha_prim = 0.535
+
+ANOVA: choices ~ task * picture
+  Task:        F(1, 238) = 0.263, p = 0.609, eta2 = 0.001
+  Picture:     F(1, 238) = 17.118, p = < .001, eta2 = 0.067
+  Interaction: F(1, 238) = 3.549, p = 0.061, eta2 = 0.015
+
+Simulation: Cold vs Warm: t(115) = 4.18, p = 0.0001, d = 0.776
+Priming:    Cold vs Warm: t(123) = 1.68, p = 0.0947, d = 0.302
+
+Manipulation check (Q41.0):
+  Task: F(1, 238) = 123.51, p = < .001, eta2 = 0.342

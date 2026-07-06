@@ -1,0 +1,22 @@
+STUDY 1b - KEY STATISTICS
+=========================
+
+Valid N = 279
+  Simulation-Cold: n = 57
+  Simulation-Warm: n = 67
+  Priming-Cold:    n = 70
+  Priming-Warm:    n = 65
+
+Reliability: Simulation α = 0.639, Priming α = 0.535
+
+Factorial ANOVA: choices ~ task * picture
+  Task:        F(NA, 238) = NA, p = NA, η² = NA
+  Picture:     F(1, 238) = 17.118, p = 0.000049, η² = 0.067
+  Interaction: F(1, 238) = 3.549, p = 0.060814, η² = 0.015
+
+Simple effects:
+  Simulation: Cold vs Warm: t(115) = 4.18, p = 0.0001, d = 0.776
+  Priming: Cold vs Warm: t(123) = 1.68, p = 0.0947, d = 0.302
+
+Manipulation Check (Q41.0):
+  Task main effect: F(NA, 238) = NA, p = NA, η² = NA

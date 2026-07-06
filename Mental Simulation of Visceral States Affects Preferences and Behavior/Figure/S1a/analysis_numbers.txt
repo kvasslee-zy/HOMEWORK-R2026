@@ -1,0 +1,25 @@
+STUDY 1a - KEY STATISTICS
+=========================
+
+N = 119 (Hot: 58, Cold: 61)
+Cronbach's alpha = 0.653
+
+Warm Preference:
+  Hot:  M = 5.19, SD = 1.73
+  Cold: M = 6.23, SD = 1.52
+  t(117) = -3.50, p = 0.000657, d = 0.642
+  95% CI = [-1.635, -0.453]
+
+Manipulation Check (Feeling):
+  Hot:  M = 5.79, SD = 1.36
+  Cold: M = 5.11, SD = 1.72
+  t(117) = 2.38, p = 0.0192, d = -0.437
+
+Regression 1: warm_pref ~ Q42.0
+  B = -0.265, SE = 0.096, t = -2.75
+  Beta = -0.247, R² = 0.0609
+
+Regression 2: warm_pref ~ condition + Q42.0
+  Condition: B = 0.906, Beta = 0.267, t = 3.01
+  Q42.0: B = -0.203, Beta = -0.189, t = -2.14
+  R² = 0.1291, ΔR² from Model 1 = 0.0682
